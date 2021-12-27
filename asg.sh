@@ -28,17 +28,17 @@ if [ -z "${SERV}" ]; then
             rm -rf terraform_1.1.2_linux_amd64.zip &> /dev/null
             sudo mv terraform /usr/local/bin/
             VER=$(terraform -v | head -n 1 | cut -d ' ' -f 2)
-            echo -e "\e[0;32mTerraform installed: ${VER}\e[0m"
+            echo -e "Terraform installed: ${VER}"
         else
-            echo -e "\e[0;31mUnsupported architecture: ${ARCH}\e[0m"
+            echo -e "Unsupported architecture: ${ARCH}"
         fi
     else
-        echo -e "\e[0;31mNeed to install terraform.\nExiting...\e[0m"
+        echo -e "Need to install terraform.\nExiting..."
         exit 1
     fi
 else
     VER=$(terraform -v | head -n 1 | cut -d ' ' -f 2)
-    echo -e "\e[0;32mTerraform found: ${VER}\e[0m"
+    echo -e "Terraform found: ${VER}"
 fi
 
 while true;
@@ -49,7 +49,7 @@ do
         read AWS_ACCESS_KEY
         if [ -z $AWS_ACCESS_KEY ]
         then
-            echo -e "\e[0;31mPlease enter your Access Key.\e[0m"
+            echo -e "\nPlease enter your Access Key."
             continue
         fi
         break
@@ -60,7 +60,7 @@ do
         read AWS_SECRET_KEY
         if [ -z $AWS_SECRET_KEY ]
         then
-            echo -e "\e[0;31mPlease enter your Secret Key.\e[0m"
+            echo -e "\nPlease enter your Secret Key."
             continue
         fi
         break
@@ -71,7 +71,7 @@ do
         read AWS_REGION
         if [ -z $AWS_REGION ]
         then
-            echo -e "\e[0;31mPlease enter your AWS Region.\e[0m"
+            echo -e "\nPlease enter your AWS Region."
             continue
         fi
         break
@@ -82,7 +82,7 @@ do
         read AWS_PROJECT_NAME
         if [ -z $AWS_PROJECT_NAME ]
         then
-            echo -e "\e[0;31mPlease enter your Project Name.\e[0m"
+            echo -e "\nPlease enter your Project Name."
             continue
         fi
         break
