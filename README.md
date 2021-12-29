@@ -1,10 +1,16 @@
 ## AutoScaling
 
+:::note
+To remove the infrastructure that you have created, just re-run the script and it will prompt you for destroying the infra
+:::
+
 1. Clone the VPC branch of the AutoScaling repo in micky.
 
 ```git clone -b vpc https://mgtsys:ab8413bb85accdc0deab71b10e75a8e995d0c576@github.com/mgtsys/AutoScaling.git```
 
 2. Now execute the vpc.sh script to create the VPC.
+
+```bash vpc.sh```
 
 3. You will be asked to enter the following details.
 
@@ -30,6 +36,8 @@
 ```git clone -b asg https://mgtsys:ab8413bb85accdc0deab71b10e75a8e995d0c576@github.com/mgtsys/AutoScaling.git```
 
 7. Now execute the asg.sh script to create the ASG.
+
+```bash asg.sh```
 
 8. You will be asked to enter the same details as you did in step 3.
 
