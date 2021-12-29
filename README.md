@@ -1,8 +1,8 @@
 ## AutoScaling
 
-:::note
-To remove the infrastructure that you have created, just re-run the script and it will prompt you for destroying the infra
-:::
+
+Note: To remove the infrastructure that you have created, just re-run the script and it will prompt you for destroying the infra
+
 
 1. Clone the VPC branch of the AutoScaling repo in micky.
 
