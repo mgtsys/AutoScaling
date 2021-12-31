@@ -62,7 +62,7 @@ resource "aws_ami_from_instance" "web_master_ami" {
 }
 
 resource "aws_launch_configuration" "as_launchconfig" {
-  name   = "${var.project_name}-0.0.1"
+  name   = "${var.project_name}-autoscaling-0.0.1"
   image_id      = aws_ami_from_instance.web_master_ami.id
   instance_type = "m6g.large"
   security_groups = data.aws_instance.web_master.vpc_security_group_ids
