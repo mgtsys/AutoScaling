@@ -31,7 +31,7 @@ Note: To remove the infrastructure that you have created, just re-run the script
 
 6. Now, launch the instance from MGT Backend in the newly created VPC and proceed with setting up Admin and WebMaster servers.
 
-IMPORTANT: Make sure your instances are named in the following format ``Admin = "$project_name-admin"; WebMaster = "$project_name-web-master"``
+IMPORTANT: Make sure your instances are named in the following format ``Admin = "$project_name-admin"`` ``WebMaster = "$project_name-web-master"``
 
 It is important for the script to detect the names in order to fetch the details properly.
 
