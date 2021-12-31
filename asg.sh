@@ -99,7 +99,7 @@ then
         then
                 if [[ -n $TF_RUN ]]
                 then
-                        echo -en "\nDo you want to destroy your existing VPC? (y/n): "
+                        echo -en "\nDo you want to destroy your existing AS Infra? (y/n): "
                         read ANSWER
                         case $ANSWER in
                             y)
