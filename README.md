@@ -10,7 +10,7 @@ Note: To remove the infrastructure that you have created, just re-run the script
 
 2. Now execute the vpc.sh script to create the VPC.
 
-```bash vpc.sh```
+```cd /home/mgt/AutoScaling/vpc && bash vpc.sh```
 
 3. You will be asked to enter the following details.
 
@@ -41,7 +41,7 @@ It is important for the script to detect the names in mentioned format to fetch 
 
 7. Now execute the asg.sh script to create the ASG.
 
-```bash asg.sh```
+```cd /home/mgt/AutoScaling/asg && bash asg.sh```
 
 8. You will be asked to enter the same details as you did in step 3.
 
